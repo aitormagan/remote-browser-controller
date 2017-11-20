@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Manager Page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Remote Browser Controller</h1>
+
+      <div class="alert alert-success hidden" id="ok-message">
+        Page <span id="url-info"></span> sent to browser(s) correctly!
+      </div>
+      
+      <form id="url-form">
+        <div class="form-group">
+          <label for="url-input">URL</label>
+          <input type="text" class="form-control" id="url-input" aria-describedby="urlHelp" placeholder="Enter URL">
+          <small id="urlHelp" class="form-text text-muted">The URL to be shown in remote browsers</small>
+        </div>
+        <button type="submit" class="btn btn-primary">Send URL!</button>
+      </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="js/manager.js"></script>
+  </body>
+</html>
